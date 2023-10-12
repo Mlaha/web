@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit" method="post">
+        <p>Styled Select Option Field in Form</p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <select id="age" name="age" required>
+            <option value="18-25">18-25</option>
+            <option value="Below 18">Below 18</option>
+            <option value="25-40">25-40</option>
+            <option value="40-60">40-60</option>
+            <option value="Above 60">Above 60</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
